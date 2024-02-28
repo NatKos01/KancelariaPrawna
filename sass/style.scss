@@ -12,7 +12,6 @@ html {
 
 body {
 	font-family: 'Ubuntu', sans-serif;
-	background-color: rgb(71, 59, 59);
 }
 
 header {
@@ -116,7 +115,7 @@ header {
 			color: colors.$font-color;
 			font-size: 1.5rem;
 			padding: 0.5em 1.2em;
-             margin: 0;
+			margin: 0;
 			i {
 				padding-right: 0.5em;
 			}
@@ -132,6 +131,113 @@ header {
 		padding: 1.2em;
 		margin: 0 1em;
 		font-size: 1.8rem;
+	}
+}
+
+.law {
+	text-align: center;
+
+	&__text {
+		margin: 10em auto;
+		text-align: center;
+		width: 70%;
+
+		&-title {
+			text-transform: uppercase;
+			font-size: 4.2rem;
+			font-weight: bold;
+		}
+
+		&-describe {
+			margin-top: 2em;
+			font-size: 1.8rem;
+		}
+	}
+}
+
+.offer {
+	position: relative;
+	top: 0;
+	background-image: url('../img/lawbg.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+
+	&__text {
+		padding: 10em 0;
+		text-align: center;
+
+		&-title {
+			text-transform: uppercase;
+			font-size: 4.2rem;
+			font-weight: bold;
+		}
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.7);
+		z-index: -2;
+	}
+
+	&__box {
+		padding-top: 3em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&-item {
+			width: 40%;
+			margin: 3em;
+			padding: 1em;
+			border-top: 1px solid black;
+			border-right: 1px solid black;
+			box-shadow: 3px -3px 6px rgb(72, 72, 72);
+			background-color: #ffffff7f;
+
+			h3 {
+				text-align: center;
+				font-size: 2.4rem;
+				text-transform: uppercase;
+				span {
+					font-weight: bold;
+				}
+			}
+
+			ul {
+				margin: 1em;
+				padding: 1em;
+				p {
+					font-size: 1.8rem;
+					text-align: left;
+					padding: 0.5em;
+					margin: 0.5em;
+				}
+			}
+		}
+
+		// &-individual {
+		// }
+
+		// &-business {
+		// }
+	}
+}
+
+.map {
+	padding-top: 5em;
+	iframe {
+		width: 100%;
+	}
+}
+
+footer {
+	p {
+		padding: 0.5em;
 	}
 }
 

@@ -11,7 +11,6 @@ html {
 
 body {
   font-family: "Ubuntu", sans-serif;
-  background-color: rgb(71, 59, 59);
 }
 
 header h1 {
@@ -117,6 +116,95 @@ header .hero-image .kirp {
   padding: 1.2em;
   margin: 0 1em;
   font-size: 1.8rem;
+}
+
+.law {
+  text-align: center;
+}
+.law__text {
+  margin: 10em auto;
+  text-align: center;
+  width: 70%;
+}
+.law__text-title {
+  text-transform: uppercase;
+  font-size: 4.2rem;
+  font-weight: bold;
+}
+.law__text-describe {
+  margin-top: 2em;
+  font-size: 1.8rem;
+}
+
+.offer {
+  position: relative;
+  top: 0;
+  background-image: url("../img/lawbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.offer__text {
+  padding: 10em 0;
+  text-align: center;
+}
+.offer__text-title {
+  text-transform: uppercase;
+  font-size: 4.2rem;
+  font-weight: bold;
+}
+.offer__bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: -2;
+}
+.offer__box {
+  padding-top: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offer__box-item {
+  width: 40%;
+  margin: 3em;
+  padding: 1em;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  box-shadow: 3px -3px 6px rgb(72, 72, 72);
+  background-color: rgba(255, 255, 255, 0.4980392157);
+}
+.offer__box-item h3 {
+  text-align: center;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.offer__box-item h3 span {
+  font-weight: bold;
+}
+.offer__box-item ul {
+  margin: 1em;
+  padding: 1em;
+}
+.offer__box-item ul p {
+  font-size: 1.8rem;
+  text-align: left;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.map {
+  padding-top: 5em;
+}
+.map iframe {
+  width: 100%;
+}
+
+footer p {
+  padding: 0.5em;
 }
 
 @media (min-width: 768px) {
