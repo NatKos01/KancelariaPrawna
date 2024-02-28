@@ -12,67 +12,13 @@
 		.navbar-nav {
 			.nav-link {
 				font-size: 1.5rem;
-				padding: 0.5em 1.18em;
+				padding: 0.5em 1.19em;
 			}
 		}
 		.navcont {
 			.nav-link {
 				font-size: 1.5rem;
-				padding: 0.5em 1.2em;
-			}
-		}
-	}
-}
-
-@media (min-width: 1173px) {
-	header {
-		.hero-image {
-			.kirp {
-				left: 18em;
-			}
-		}
-	}
-
-	.navbar {
-		width: 70%;
-		.navbar-nav {
-			.nav-link {
-				font-size: 1.6rem;
-				padding: 0.5em 1.25em;
-			}
-		}
-
-		.navcont {
-			.nav-link {
-				font-size: 1.6rem;
-				padding: 0.5em 1.3em;
-			}
-		}
-	}
-}
-
-@media (min-width: 1338px) {
-	header {
-		.hero-image {
-			.kirp {
-				left: 18em;
-			}
-		}
-	}
-
-	.navbar {
-		width: 73%;
-		.navbar-nav {
-			.nav-link {
-				font-size: 1.8rem;
-				padding: 0.5em 1.5em;
-			}
-		}
-
-		.navcont {
-			.nav-link {
-				font-size: 1.8rem;
-				padding: 0.5em 1.5em;
+				padding: 0.5em 1.19em;
 			}
 		}
 	}
@@ -110,23 +56,76 @@
 
 	.navbar {
 		width: 80%;
-	    top: 210px;
-	    left: 50%;
-	    transform: translate(-50%);
-	    border-bottom: 1px solid white;
-        .navbar-nav {
-            .nav-link {
-                color: colors.$font-color;
-                font-size: 1.5rem;
-                padding: 0.5em 1.2em;
-    
-            }
-        }
-	    .navbar-toggler {
-	        color: colors.$font-color;
-	        padding: 1.4em;
-	        margin: 0 1em;
-	        font-size: 1.8rem;
-	    }
+		top: 210px;
+		left: 50%;
+		transform: translate(-50%);
+		border-bottom: 1px solid white;
+		.navbar-nav {
+			.nav-link {
+				color: colors.$font-color;
+				font-size: 1.5rem;
+				padding: 0.5em 1.2em;
+			}
+		}
+		.navbar-toggler {
+			color: colors.$font-color;
+			padding: 1.4em;
+			margin: 0 1em;
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media (min-width: 1173px) {
+	header {
+		.hero-image {
+			.kirp {
+				left: 18em;
+			}
+		}
+	}
+
+	.navbar {
+		width: 70%;
+		.navbar-nav {
+			.nav-link {
+				font-size: 1.6rem;
+				padding: 0.5em 1.28em;
+			}
+		}
+
+		.navcont {
+			.nav-link {
+				font-size: 1.6rem;
+				padding: 0.5em 1.28em;
+			}
+		}
+	}
+}
+
+@media (min-width: 1338px) {
+	header {
+		.hero-image {
+			.kirp {
+				left: 18em;
+			}
+		}
+	}
+
+	.navbar {
+		width: 73%;
+		.navbar-nav {
+			.nav-link {
+				font-size: 1.8rem;
+				padding: 0.5em 1.5em;
+			}
+		}
+
+		.navcont {
+			.nav-link {
+				font-size: 1.8rem;
+				padding: 0.5em 1.5em;
+			}
+		}
 	}
 }
