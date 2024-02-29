@@ -48,4 +48,53 @@
 			font-size: 1.8rem;
 		}
 	}
+
+	.law {
+		&__text {
+			margin: 8em auto;
+			width: 80%;
+
+			&-title {
+				font-size: 3.6rem;
+			}
+
+			&-describe {
+				margin-top: 2em;
+				font-size: 1.4rem;
+			}
+		}
+	}
+
+	.offer {
+		top: 0;
+		background-image: url('../img/lawbg.jpg');
+
+		&__text {
+			padding: 8em 0;
+
+			&-title {
+				font-size: 3.6rem;
+			}
+		}
+
+		&__box {
+			padding-top: 2em;
+			&-item {
+				width: 70%;
+				margin: 3em;
+				padding: 1em;
+				h3 {
+					font-size: 2rem;
+				}
+
+				ul {
+					
+					p {
+						font-size: 1.4rem;
+						
+					}
+				}
+			}
+		}
+	}
 }

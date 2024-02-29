@@ -1,3 +1,13 @@
+.line-text::after {
+  content: "";
+  height: 2px;
+  display: flex;
+  width: 70px;
+  margin: 0.5em auto;
+  background-color: black;
+  transform: skew(120deg);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -122,37 +132,39 @@ header .hero-image .kirp {
   text-align: center;
 }
 .law__text {
-  margin: 10em auto;
+  margin: 7em auto;
   text-align: center;
-  width: 70%;
+  width: 85%;
 }
 .law__text-title {
   text-transform: uppercase;
-  font-size: 4.2rem;
+  font-size: 3.2rem;
   font-weight: bold;
+  letter-spacing: 3px;
 }
 .law__text-describe {
   margin-top: 2em;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 .offer {
   position: relative;
   top: 0;
-  background-image: url("../img/lawbg.jpg");
+  background-image: url("../img/lawbg-small.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
 }
 .offer__text {
-  padding: 10em 0;
+  padding: 7em 0;
   text-align: center;
 }
 .offer__text-title {
   text-transform: uppercase;
-  font-size: 4.2rem;
+  font-size: 3.2rem;
   font-weight: bold;
+  letter-spacing: 3px;
 }
 .offer__bg {
   position: absolute;
@@ -165,21 +177,20 @@ header .hero-image .kirp {
 .offer__box {
   padding-top: 3em;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .offer__box-item {
-  width: 40%;
+  width: 90%;
   margin: 3em;
   padding: 1em;
-  border-top: 1px solid black;
-  border-right: 1px solid black;
   box-shadow: 3px -3px 6px rgb(72, 72, 72);
   background-color: rgba(255, 255, 255, 0.4980392157);
 }
 .offer__box-item h3 {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
 }
 .offer__box-item h3 span {
@@ -190,7 +201,7 @@ header .hero-image .kirp {
   padding: 1em;
 }
 .offer__box-item ul p {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   text-align: left;
   padding: 0.5em;
   margin: 0.5em;
@@ -249,6 +260,41 @@ footer p {
     margin: 0 1em;
     font-size: 1.8rem;
   }
+  .law__text {
+    margin: 8em auto;
+    width: 80%;
+  }
+  .law__text-title {
+    font-size: 3.6rem;
+  }
+  .law__text-describe {
+    margin-top: 2em;
+    font-size: 1.4rem;
+  }
+  .offer {
+    top: 0;
+    background-image: url("../img/lawbg.jpg");
+  }
+  .offer__text {
+    padding: 8em 0;
+  }
+  .offer__text-title {
+    font-size: 3.6rem;
+  }
+  .offer__box {
+    padding-top: 2em;
+  }
+  .offer__box-item {
+    width: 70%;
+    margin: 3em;
+    padding: 1em;
+  }
+  .offer__box-item h3 {
+    font-size: 2rem;
+  }
+  .offer__box-item ul p {
+    font-size: 1.4rem;
+  }
 }
 @media (min-width: 1001px) {
   header .hero-image .kirp {
@@ -306,6 +352,43 @@ footer p {
     color: rgb(40, 40, 40);
     padding: 1.4em;
     margin: 0 1em;
+    font-size: 1.8rem;
+  }
+  .law__text {
+    margin: 10em auto;
+    width: 70%;
+  }
+  .law__text-title {
+    font-size: 4.2rem;
+  }
+  .law__text-describe {
+    margin-top: 2em;
+    font-size: 1.8rem;
+  }
+  .offer {
+    top: 0;
+    background-image: url("../img/lawbg.jpg");
+  }
+  .offer__text {
+    padding: 10em 0;
+  }
+  .offer__text-title {
+    font-size: 4.2rem;
+  }
+  .offer__box {
+    padding-top: 3em;
+    flex-direction: row;
+    display: flex;
+  }
+  .offer__box-item {
+    width: 40%;
+    margin: 3em;
+    padding: 1em;
+  }
+  .offer__box-item h3 {
+    font-size: 2.4rem;
+  }
+  .offer__box-item ul p {
     font-size: 1.8rem;
   }
 }

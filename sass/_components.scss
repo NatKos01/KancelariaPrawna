@@ -1,0 +1,11 @@
+.line-text {
+	&::after {
+		content: '';
+		height: 2px;
+		display: flex;
+		width: 70px;
+		margin: 0.5em auto;
+		background-color: black;
+		transform: skew(120deg);
+	}
+}
