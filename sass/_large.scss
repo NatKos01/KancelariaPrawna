@@ -75,37 +75,34 @@
 		}
 	}
 
-
 	.law {
-	
 		&__text {
 			margin: 10em auto;
 			width: 70%;
-	
+
 			&-title {
 				font-size: 4.2rem;
 			}
-	
+
 			&-describe {
 				margin-top: 2em;
 				font-size: 1.8rem;
 			}
 		}
 	}
-	
+
 	.offer {
 		top: 0;
 		background-image: url('../img/lawbg.jpg');
-	
+
 		&__text {
 			padding: 10em 0;
-	
+
 			&-title {
 				font-size: 4.2rem;
-				
 			}
 		}
-	
+
 		&__box {
 			padding-top: 3em;
 			flex-direction: row;
@@ -117,16 +114,57 @@
 				h3 {
 					font-size: 2.4rem;
 				}
-	
+
 				ul {
-					
 					p {
 						font-size: 1.8rem;
-						
 					}
 				}
 			}
-	
+		}
+	}
+
+	.team {
+		margin: 10em auto;
+		&__text {
+			&-title {
+				padding-bottom: 0.5em;
+				font-size: 4.2rem;
+			}
+		}
+
+		&__box {
+			&-pic {
+				width: 550px;
+				height: 550px;
+				background-image: url('/img/mainfoto.png');
+				margin: 0.5em;
+			}
+
+			&-text {
+				margin: 2em;
+				width: 40%;
+
+				h3 {
+					font-size: 2.8rem;
+					margin-bottom: 0.5em;
+				}
+
+				h4 {
+					font-size: 1.8em;
+					margin-bottom: 2em;
+				}
+
+				p {
+					font-size: 1.4em;
+				}
+			}
+
+			&-item {
+				flex-direction: row;
+				margin-top: 3em;
+				padding: 1em;
+			}
 		}
 	}
 }

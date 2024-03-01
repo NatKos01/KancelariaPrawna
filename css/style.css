@@ -8,6 +8,16 @@
   transform: skew(120deg);
 }
 
+.line-decoration {
+  height: 1px;
+  display: flex;
+  width: 80%;
+  margin: 0.5em auto;
+  margin-top: 3em;
+  background-color: black;
+  transform: skew(120deg);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -44,7 +54,7 @@ header .hero-image__text {
   justify-content: start;
   align-items: center;
   height: 100%;
-  color: rgb(40, 40, 40);
+  color: rgb(33, 32, 38);
   text-transform: uppercase;
   z-index: 5;
   padding: 10px;
@@ -61,7 +71,7 @@ header .hero-image__text .under-p {
   margin: 0;
   padding: 0.7em;
   background-color: rgba(0, 0, 0, 0.45);
-  color: white;
+  color: rgb(245, 245, 245);
   font-size: 3rem;
   font-weight: bold;
 }
@@ -91,7 +101,7 @@ header .hero-image .kirp {
   flex-direction: row-reverse;
 }
 .navbar .navbar-nav .nav-link {
-  color: rgb(40, 40, 40);
+  color: rgb(33, 32, 38);
   font-size: 1.5rem;
   padding: 1.3em;
 }
@@ -109,7 +119,7 @@ header .hero-image .kirp {
   flex-direction: row;
 }
 .navbar .navcont .nav-link {
-  color: rgb(40, 40, 40);
+  color: rgb(33, 32, 38);
   font-size: 1.5rem;
   padding: 0.5em 1.2em;
   margin: 0;
@@ -122,7 +132,7 @@ header .hero-image .kirp {
 }
 .navbar .navbar-toggler {
   border: none;
-  color: rgb(40, 40, 40);
+  color: rgb(33, 32, 38);
   padding: 1.2em;
   margin: 0 1em;
   font-size: 1.8rem;
@@ -186,7 +196,7 @@ header .hero-image .kirp {
   margin: 3em;
   padding: 1em;
   box-shadow: 3px -3px 6px rgb(72, 72, 72);
-  background-color: rgba(255, 255, 255, 0.4980392157);
+  background-color: rgb(246, 246, 246);
 }
 .offer__box-item h3 {
   text-align: center;
@@ -207,9 +217,57 @@ header .hero-image .kirp {
   margin: 0.5em;
 }
 
-.map {
-  padding-top: 5em;
+.team {
+  margin: 7em auto;
 }
+.team__text {
+  text-align: center;
+}
+.team__text-title {
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.team__box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+.team__box-pic {
+  width: 300px;
+  height: 300px;
+  background-image: url("/img/mainfoto.png");
+  background-size: cover;
+  margin: 0.5em;
+}
+.team__box-text {
+  margin: 2em;
+  width: 100%;
+}
+.team__box-text h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 0.5em;
+}
+.team__box-text h4 {
+  font-size: 1.4em;
+  margin-bottom: 2em;
+  font-style: italic;
+}
+.team__box-text p {
+  font-size: 1.2em;
+}
+.team__box-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  padding: 1em;
+}
+
 .map iframe {
   width: 100%;
 }
@@ -252,10 +310,10 @@ footer p {
     border-radius: 5px;
   }
   .navbar .navbar-nav .nav-link {
-    color: rgb(40, 40, 40);
+    color: rgb(33, 32, 38);
   }
   .navbar .navbar-toggler {
-    color: rgb(40, 40, 40);
+    color: rgb(33, 32, 38);
     padding: 1.4em;
     margin: 0 1em;
     font-size: 1.8rem;
@@ -294,6 +352,28 @@ footer p {
   }
   .offer__box-item ul p {
     font-size: 1.4rem;
+  }
+  .team {
+    margin: 8em auto;
+  }
+  .team__text-title {
+    font-size: 3.6rem;
+  }
+  .team__box-pic {
+    width: 400px;
+    height: 400px;
+  }
+  .team__box-text h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+  }
+  .team__box-text h4 {
+    font-size: 1.4em;
+    margin-bottom: 2em;
+  }
+  .team__box-text p {
+    font-size: 1.4em;
+    margin: 2em 3em;
   }
 }
 @media (min-width: 1001px) {
@@ -344,12 +424,12 @@ footer p {
     border-bottom: 1px solid white;
   }
   .navbar .navbar-nav .nav-link {
-    color: rgb(40, 40, 40);
+    color: rgb(33, 32, 38);
     font-size: 1.5rem;
     padding: 0.5em 1.2em;
   }
   .navbar .navbar-toggler {
-    color: rgb(40, 40, 40);
+    color: rgb(33, 32, 38);
     padding: 1.4em;
     margin: 0 1em;
     font-size: 1.8rem;
@@ -390,6 +470,39 @@ footer p {
   }
   .offer__box-item ul p {
     font-size: 1.8rem;
+  }
+  .team {
+    margin: 10em auto;
+  }
+  .team__text-title {
+    padding-bottom: 0.5em;
+    font-size: 4.2rem;
+  }
+  .team__box-pic {
+    width: 550px;
+    height: 550px;
+    background-image: url("/img/mainfoto.png");
+    margin: 0.5em;
+  }
+  .team__box-text {
+    margin: 2em;
+    width: 40%;
+  }
+  .team__box-text h3 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5em;
+  }
+  .team__box-text h4 {
+    font-size: 1.8em;
+    margin-bottom: 2em;
+  }
+  .team__box-text p {
+    font-size: 1.4em;
+  }
+  .team__box-item {
+    flex-direction: row;
+    margin-top: 3em;
+    padding: 1em;
   }
 }
 @media (min-width: 1173px) {
