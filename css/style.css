@@ -13,7 +13,6 @@
   display: flex;
   width: 80%;
   margin: 0.5em auto;
-  margin-top: 3em;
   background-color: black;
   transform: skew(120deg);
 }
@@ -26,7 +25,6 @@
 
 html {
   font-size: 62.5%;
-  scroll-padding-top: 56px;
 }
 
 body {
@@ -142,8 +140,8 @@ header .hero-image .kirp {
   text-align: center;
 }
 .law__text {
-  margin: 7em auto;
-  text-align: center;
+  padding: 10em 0;
+  margin: 0 auto;
   width: 85%;
 }
 .law__text-title {
@@ -218,7 +216,8 @@ header .hero-image .kirp {
 }
 
 .team {
-  margin: 7em auto;
+  margin: 0 auto;
+  padding: 7em 0;
 }
 .team__text {
   text-align: center;
@@ -264,7 +263,7 @@ header .hero-image .kirp {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 3em;
+  margin: 3em;
   padding: 1em;
 }
 
@@ -319,7 +318,7 @@ footer p {
     font-size: 1.8rem;
   }
   .law__text {
-    margin: 8em auto;
+    padding: 8em 0;
     width: 80%;
   }
   .law__text-title {
@@ -354,7 +353,7 @@ footer p {
     font-size: 1.4rem;
   }
   .team {
-    margin: 8em auto;
+    padding: 8em 0;
   }
   .team__text-title {
     font-size: 3.6rem;
@@ -435,7 +434,7 @@ footer p {
     font-size: 1.8rem;
   }
   .law__text {
-    margin: 10em auto;
+    padding: 10em 0;
     width: 70%;
   }
   .law__text-title {
@@ -472,7 +471,7 @@ footer p {
     font-size: 1.8rem;
   }
   .team {
-    margin: 10em auto;
+    padding: 10em 0;
   }
   .team__text-title {
     padding-bottom: 0.5em;
@@ -501,7 +500,7 @@ footer p {
   }
   .team__box-item {
     flex-direction: row;
-    margin-top: 3em;
+    margin: 3em;
     padding: 1em;
   }
 }

@@ -51,7 +51,7 @@
 
 	.law {
 		&__text {
-			margin: 8em auto;
+			padding: 8em 0;
 			width: 80%;
 
 			&-title {
@@ -97,7 +97,7 @@
 	}
 
 	.team {
-		margin: 8em auto;
+		padding: 8em 0;
 		&__text {
 			&-title {
 				font-size: 3.6rem;
@@ -111,7 +111,7 @@
 			}
 
 			&-text {
-		
+			
 
 				h3 {
 					font-size: 2rem;

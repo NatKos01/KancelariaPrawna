@@ -8,7 +8,7 @@
 
 html {
 	font-size: 62.5%;
-	scroll-padding-top: 56px;
+	// scroll-padding-top: 56px;
 }
 
 body {
@@ -139,8 +139,8 @@ header {
 	text-align: center;
 
 	&__text {
-		margin: 7em auto;
-		text-align: center;
+		padding: 10em 0;
+		margin: 0 auto;
 		width: 85%;
 
 		&-title {
@@ -231,7 +231,8 @@ header {
 }
 
 .team {
-	margin: 7em auto;
+	margin: 0 auto;
+	padding: 7em 0;
 	&__text {
 		text-align: center;
 
@@ -282,7 +283,7 @@ header {
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			margin-top: 3em;
+			margin: 3em;
 			padding: 1em;
 		}
 	}
