@@ -105,17 +105,17 @@
 
 		&__box {
 			padding-top: 3em;
-			flex-direction: row;
+
 			display: flex;
 			&-item {
-				width: 40%;
+				width: 75%;
 				margin: 3em;
 				padding: 1em;
 				h3 {
 					font-size: 2.4rem;
 				}
 
-				ul {
+				.offer-list {
 					p {
 						font-size: 1.8rem;
 					}
@@ -134,15 +134,17 @@
 		}
 
 		&__box {
-			&-pic {
+			&-firstLaw {
 				width: 550px;
 				height: 550px;
-				background-image: url('/img/mainfoto.png');
-				margin: 0.5em;
+			}
+
+			&-secondLaw {
+				height: 550px;
+				width: 550px;
 			}
 
 			&-text {
-				margin: 2em;
 				width: 40%;
 
 				h3 {
@@ -156,7 +158,7 @@
 				}
 
 				p {
-					font-size: 1.4em;
+					font-size: 1.6em;
 				}
 			}
 
@@ -164,6 +166,63 @@
 				flex-direction: row;
 				margin: 3em;
 				padding: 1em;
+			}
+		}
+	}
+
+	.price {
+		margin: 0 auto;
+		padding: 10em 0;
+		background-image: url('../img/price-big.jpg');
+
+		&__text {
+			&-title {
+				font-size: 4.2rem;
+			}
+
+			&-box {
+				padding-top: 5em;
+
+				margin: 0 auto;
+				&-describe {
+					margin: 1em 6em;
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+
+	.contact {
+		margin: 0 auto;
+		padding: 10em 0;
+		width: 80%;
+		&__title {
+			font-size: 4.2rem;
+			margin-bottom: 2em;
+		}
+
+		&__box {
+			&-item {
+				padding: 2em;
+				margin: 2em;
+
+				h3 {
+					font-size: 4.2rem;
+				}
+
+				p {
+					margin: 1em;
+					font-size: 1.8rem;
+				}
+			}
+
+			.contact-two {
+				p {
+					margin: 2em 0;
+					i {
+						margin-right: 1em;
+					}
+				}
 			}
 		}
 	}

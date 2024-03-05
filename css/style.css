@@ -149,6 +149,7 @@ header .hero-image .kirp {
   font-size: 3.2rem;
   font-weight: bold;
   letter-spacing: 3px;
+  padding-bottom: 0.5em;
 }
 .law__text-describe {
   margin-top: 2em;
@@ -204,12 +205,12 @@ header .hero-image .kirp {
 .offer__box-item h3 span {
   font-weight: bold;
 }
-.offer__box-item ul {
+.offer__box-item .offer-list {
   margin: 1em;
   padding: 1em;
 }
-.offer__box-item ul p {
-  font-size: 1.2rem;
+.offer__box-item .offer-list p {
+  font-size: 1.3rem;
   text-align: left;
   padding: 0.5em;
   margin: 0.5em;
@@ -231,17 +232,24 @@ header .hero-image .kirp {
 .team__box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 3em;
 }
-.team__box-pic {
+.team__box-firstLaw {
   width: 300px;
   height: 300px;
-  background-image: url("/img/mainfoto.png");
+  background-image: url("../img/mainfoto.png");
   background-size: cover;
   margin: 0.5em;
 }
+.team__box-secondLaw {
+  width: 300px;
+  height: 300px;
+  background-image: url("../img/secondLaw.png");
+  background-size: cover;
+  background-position: center;
+  margin: 0.5em;
+}
 .team__box-text {
-  margin: 2em;
+  margin-top: 2em;
   width: 100%;
 }
 .team__box-text h3 {
@@ -256,7 +264,7 @@ header .hero-image .kirp {
   font-style: italic;
 }
 .team__box-text p {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 .team__box-item {
   display: flex;
@@ -265,6 +273,93 @@ header .hero-image .kirp {
   justify-content: center;
   margin: 3em;
   padding: 1em;
+}
+
+.price {
+  position: relative;
+  margin: 0 auto;
+  padding: 7em 0;
+  background-image: url("../img/price-small.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.price__text-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.price__text-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5em;
+  margin: 0 auto;
+}
+.price__text-box-describe {
+  margin: 1em 2em;
+  font-size: 1.3em;
+}
+.price__text-box .bold-text {
+  font-weight: bold;
+}
+.price__bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: -2;
+}
+
+.contact {
+  margin: 0 auto;
+  padding: 7em 0;
+}
+.contact__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 2em;
+}
+.contact__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: rgb(249, 249, 249);
+}
+.contact__box-item {
+  padding: 2em;
+  margin: 2em;
+}
+.contact__box-item h3 {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.contact__box-item p {
+  margin: 1em;
+  font-size: 1.4em;
+}
+.contact__box .contact-one {
+  text-align: center;
+}
+.contact__box .contact-one p {
+  text-transform: uppercase;
+}
+.contact__box .contact-two p {
+  margin: 1em 0;
+  align-items: left;
+}
+.contact__box .contact-two p i {
+  margin-right: 1em;
 }
 
 .map iframe {
@@ -326,7 +421,7 @@ footer p {
   }
   .law__text-describe {
     margin-top: 2em;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   .offer {
     top: 0;
@@ -342,14 +437,14 @@ footer p {
     padding-top: 2em;
   }
   .offer__box-item {
-    width: 70%;
+    width: 80%;
     margin: 3em;
     padding: 1em;
   }
   .offer__box-item h3 {
     font-size: 2rem;
   }
-  .offer__box-item ul p {
+  .offer__box-item .offer-list p {
     font-size: 1.4rem;
   }
   .team {
@@ -358,7 +453,11 @@ footer p {
   .team__text-title {
     font-size: 3.6rem;
   }
-  .team__box-pic {
+  .team__box-firstLaw {
+    width: 400px;
+    height: 400px;
+  }
+  .team__box-secondLaw {
     width: 400px;
     height: 400px;
   }
@@ -367,12 +466,65 @@ footer p {
     margin-bottom: 0.5em;
   }
   .team__box-text h4 {
-    font-size: 1.4em;
+    font-size: 1.6em;
     margin-bottom: 2em;
   }
   .team__box-text p {
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin: 2em 3em;
+  }
+  .price {
+    margin: 0 auto;
+    padding: 8em 0;
+  }
+  .price__text-title {
+    font-size: 3.6rem;
+    letter-spacing: 3px;
+  }
+  .price__text-box {
+    margin: 0 auto;
+  }
+  .price__text-box-describe {
+    margin: 1em 3em;
+    font-size: 1.6rem;
+  }
+  .contact {
+    margin: 0 auto;
+    padding: 8em 0;
+    width: 95%;
+  }
+  .contact__title {
+    font-size: 3.6rem;
+    margin-bottom: 2em;
+  }
+  .contact__box {
+    flex-direction: row;
+  }
+  .contact__box-item {
+    width: 50%;
+    padding: 2em;
+    margin: 2em;
+  }
+  .contact__box-item h3 {
+    font-size: 3.6rem;
+  }
+  .contact__box-item p {
+    margin: 1em;
+    font-size: 1.6rem;
+  }
+  .contact__box .contact-two p {
+    margin: 2em 0;
+  }
+  .contact__box .contact-two p i {
+    margin-right: 1em;
+  }
+  .contact .contact-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 1px;
+    background-color: black;
   }
 }
 @media (min-width: 1001px) {
@@ -456,18 +608,17 @@ footer p {
   }
   .offer__box {
     padding-top: 3em;
-    flex-direction: row;
     display: flex;
   }
   .offer__box-item {
-    width: 40%;
+    width: 75%;
     margin: 3em;
     padding: 1em;
   }
   .offer__box-item h3 {
     font-size: 2.4rem;
   }
-  .offer__box-item ul p {
+  .offer__box-item .offer-list p {
     font-size: 1.8rem;
   }
   .team {
@@ -477,14 +628,15 @@ footer p {
     padding-bottom: 0.5em;
     font-size: 4.2rem;
   }
-  .team__box-pic {
+  .team__box-firstLaw {
     width: 550px;
     height: 550px;
-    background-image: url("/img/mainfoto.png");
-    margin: 0.5em;
+  }
+  .team__box-secondLaw {
+    height: 550px;
+    width: 550px;
   }
   .team__box-text {
-    margin: 2em;
     width: 40%;
   }
   .team__box-text h3 {
@@ -496,12 +648,54 @@ footer p {
     margin-bottom: 2em;
   }
   .team__box-text p {
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
   .team__box-item {
     flex-direction: row;
     margin: 3em;
     padding: 1em;
+  }
+  .price {
+    margin: 0 auto;
+    padding: 10em 0;
+    background-image: url("../img/price-big.jpg");
+  }
+  .price__text-title {
+    font-size: 4.2rem;
+  }
+  .price__text-box {
+    padding-top: 5em;
+    margin: 0 auto;
+  }
+  .price__text-box-describe {
+    margin: 1em 6em;
+    font-size: 1.8rem;
+  }
+  .contact {
+    margin: 0 auto;
+    padding: 10em 0;
+    width: 80%;
+  }
+  .contact__title {
+    font-size: 4.2rem;
+    margin-bottom: 2em;
+  }
+  .contact__box-item {
+    padding: 2em;
+    margin: 2em;
+  }
+  .contact__box-item h3 {
+    font-size: 4.2rem;
+  }
+  .contact__box-item p {
+    margin: 1em;
+    font-size: 1.8rem;
+  }
+  .contact__box .contact-two p {
+    margin: 2em 0;
+  }
+  .contact__box .contact-two p i {
+    margin-right: 1em;
   }
 }
 @media (min-width: 1173px) {
