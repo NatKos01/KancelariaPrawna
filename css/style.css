@@ -25,6 +25,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-padding-top: 61.2px;
 }
 
 body {
@@ -90,6 +91,15 @@ header .hero-image .kirp {
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.5);
   border-top: 1px solid white;
+}
+.navbar.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.9;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, border-bottom 0.3s ease;
 }
 .navbar .navbar-collapse {
   flex-grow: 0;
@@ -193,9 +203,18 @@ header .hero-image .kirp {
 .offer__box-item {
   width: 90%;
   margin: 3em;
-  padding: 1em;
   box-shadow: 3px -3px 6px rgb(72, 72, 72);
   background-color: rgb(246, 246, 246);
+}
+.offer__box-item .toggle-btn {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 2em;
+  transition: background 0.3s;
+}
+.offer__box-item .toggle-btn:hover {
+  background-color: rgb(208, 208, 208);
 }
 .offer__box-item h3 {
   text-align: center;
@@ -205,15 +224,30 @@ header .hero-image .kirp {
 .offer__box-item h3 span {
   font-weight: bold;
 }
-.offer__box-item .offer-list {
-  margin: 1em;
-  padding: 1em;
+.offer__box-item h3 .fa-solid {
+  margin-right: 1em;
+  transition: transform 0.3s ease;
 }
-.offer__box-item .offer-list p {
+.offer__box-item h3 .fa-solid.rotate {
+  transform: rotate(90deg);
+}
+.offer__box-item .offer-list {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+  padding: 0 1em;
+  margin: 0 1em;
+}
+.offer__box-item .offer-list ol {
   font-size: 1.3rem;
+}
+.offer__box-item .offer-list ol p {
   text-align: left;
   padding: 0.5em;
-  margin: 0.5em;
+  margin: 0.5em 0;
+}
+.offer__box-item.open .offer-list {
+  max-height: 1000px;
 }
 
 .team {
@@ -274,6 +308,19 @@ header .hero-image .kirp {
   margin: 3em;
   padding: 1em;
 }
+.team .under_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team .under_text-info {
+  padding-top: 5em;
+  text-align: center;
+  font-size: 1.3em;
+  width: 90%;
+  margin: 0 auto;
+  color: rgb(111, 110, 110);
+}
 
 .price {
   position: relative;
@@ -302,6 +349,16 @@ header .hero-image .kirp {
 .price__text-box-describe {
   margin: 1em 2em;
   font-size: 1.3em;
+}
+.price__text-box-first {
+  margin: 1em 2em;
+  font-size: 1.4em;
+}
+.price__text-box-info {
+  padding-top: 3em;
+  margin: 1em 2em;
+  font-size: 1.3em;
+  text-align: center;
 }
 .price__text-box .bold-text {
   font-weight: bold;
@@ -371,6 +428,9 @@ footer p {
 }
 
 @media (min-width: 768px) {
+  html {
+    scroll-padding-top: 70px;
+  }
   header h1 {
     font-size: 3.8rem;
     margin-top: 1em;
@@ -402,6 +462,9 @@ footer p {
     left: 50%;
     transform: translate(-50%);
     border-radius: 5px;
+  }
+  .navbar.sticky {
+    border-radius: 0;
   }
   .navbar .navbar-nav .nav-link {
     color: rgb(33, 32, 38);
@@ -439,12 +502,11 @@ footer p {
   .offer__box-item {
     width: 80%;
     margin: 3em;
-    padding: 1em;
   }
   .offer__box-item h3 {
     font-size: 2rem;
   }
-  .offer__box-item .offer-list p {
+  .offer__box-item .offer-list ol {
     font-size: 1.4rem;
   }
   .team {
@@ -473,6 +535,16 @@ footer p {
     font-size: 1.5em;
     margin: 2em 3em;
   }
+  .team .under_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .team .under_text-info {
+    text-align: center;
+    width: 80%;
+    font-size: 1.5em;
+  }
   .price {
     margin: 0 auto;
     padding: 8em 0;
@@ -487,6 +559,16 @@ footer p {
   .price__text-box-describe {
     margin: 1em 3em;
     font-size: 1.6rem;
+  }
+  .price__text-box-first {
+    margin: 1em 3em;
+    font-size: 1.7em;
+  }
+  .price__text-box-info {
+    padding-top: 3em;
+    margin: 1em 3em;
+    font-size: 1.6rem;
+    text-align: center;
   }
   .contact {
     margin: 0 auto;
@@ -544,6 +626,9 @@ footer p {
   }
 }
 @media (min-width: 992px) {
+  html {
+    scroll-padding-top: 59.1px;
+  }
   header h1 {
     font-size: 5rem;
     margin-top: 0.4em;
@@ -573,6 +658,10 @@ footer p {
     left: 50%;
     transform: translate(-50%);
     border-bottom: 1px solid white;
+  }
+  .navbar.sticky {
+    border-radius: 0;
+    padding: 1em;
   }
   .navbar .navbar-nav .nav-link {
     color: rgb(33, 32, 38);
@@ -613,12 +702,11 @@ footer p {
   .offer__box-item {
     width: 75%;
     margin: 3em;
-    padding: 1em;
   }
   .offer__box-item h3 {
     font-size: 2.4rem;
   }
-  .offer__box-item .offer-list p {
+  .offer__box-item .offer-list ol {
     font-size: 1.8rem;
   }
   .team {
@@ -655,6 +743,16 @@ footer p {
     margin: 3em;
     padding: 1em;
   }
+  .team .under_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .team .under_text-info {
+    text-align: center;
+    width: 75%;
+    font-size: 1.6em;
+  }
   .price {
     margin: 0 auto;
     padding: 10em 0;
@@ -670,6 +768,16 @@ footer p {
   .price__text-box-describe {
     margin: 1em 6em;
     font-size: 1.8rem;
+  }
+  .price__text-box-first {
+    margin: 1em 6em;
+    font-size: 1.9em;
+  }
+  .price__text-box-info {
+    padding-top: 3em;
+    margin: 1em 6em;
+    font-size: 1.8rem;
+    text-align: center;
   }
   .contact {
     margin: 0 auto;

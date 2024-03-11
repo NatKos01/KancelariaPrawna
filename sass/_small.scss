@@ -1,4 +1,8 @@
 @media (min-width: 768px) {
+	html {
+		scroll-padding-top: 70px;
+	}
+
 	header {
 		h1 {
 			font-size: 3.8rem;
@@ -36,6 +40,10 @@
 		left: 50%;
 		transform: translate(-50%);
 		border-radius: 5px;
+
+		&.sticky {
+			border-radius: 0;
+		}
 		.navbar-nav {
 			.nav-link {
 				color: colors.$font-color;
@@ -82,13 +90,13 @@
 			&-item {
 				width: 80%;
 				margin: 3em;
-				padding: 1em;
+
 				h3 {
 					font-size: 2rem;
 				}
 
 				.offer-list {
-					p {
+					ol {
 						font-size: 1.4rem;
 					}
 				}
@@ -132,6 +140,18 @@
 				}
 			}
 		}
+
+		.under_text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&-info {
+				text-align: center;
+				width: 80%;
+				font-size: 1.5em;
+			}
+		}
 	}
 
 	.price {
@@ -149,6 +169,18 @@
 				&-describe {
 					margin: 1em 3em;
 					font-size: 1.6rem;
+				}
+
+				&-first {
+					margin: 1em 3em;
+					font-size: 1.7em;
+				}
+
+				&-info {
+					padding-top: 3em;
+					margin: 1em 3em;
+					font-size: 1.6rem;
+					text-align: center;
 				}
 			}
 		}

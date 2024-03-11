@@ -8,7 +8,7 @@
 
 html {
 	font-size: 62.5%;
-	// scroll-padding-top: 56px;
+	scroll-padding-top: 61.2px;
 }
 
 body {
@@ -79,6 +79,16 @@ header {
 	z-index: 1;
 	background-color: rgba(255, 255, 255, 0.5);
 	border-top: 1px solid white;
+
+	&.sticky {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		background-color: rgb(255, 255, 255);
+		opacity: 0.9;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		transition: background-color 0.3s ease, border-bottom 0.3s ease;
+	}
 
 	.navbar-collapse {
 		flex-grow: 0;
@@ -197,10 +207,18 @@ header {
 		&-item {
 			width: 90%;
 			margin: 3em;
-			padding: 1em;
 			box-shadow: 3px -3px 6px rgb(72, 72, 72);
 			background-color: rgb(246, 246, 246);
-
+			.toggle-btn {
+				background-color: transparent;
+				border: none;
+				width: 100%;
+				padding: 2em;
+				transition: background 0.3s;
+				&:hover {
+					background-color: rgb(208, 208, 208);
+				}
+			}
 			h3 {
 				text-align: center;
 				font-size: 1.8rem;
@@ -208,16 +226,37 @@ header {
 				span {
 					font-weight: bold;
 				}
+
+				.fa-solid {
+					margin-right: 1em;
+					transition: transform 0.3s ease;
+					&.rotate {
+						transform: rotate(90deg);
+					}
+				}
 			}
 
 			.offer-list {
-				margin: 1em;
-				padding: 1em;
-				p {
+				overflow: hidden;
+				max-height: 0;
+				transition: max-height 0.3s ease;
+				padding: 0 1em;
+				margin: 0 1em;
+
+				ol {
 					font-size: 1.3rem;
-					text-align: left;
-					padding: 0.5em;
-					margin: 0.5em;
+
+					p {
+						text-align: left;
+						padding: 0.5em;
+						margin: 0.5em 0;
+					}
+				}
+			}
+
+			&.open {
+				.offer-list {
+					max-height: 1000px;
 				}
 			}
 		}
@@ -296,6 +335,21 @@ header {
 			padding: 1em;
 		}
 	}
+
+	.under_text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&-info {
+			padding-top: 5em;
+			text-align: center;
+			font-size: 1.3em;
+			width: 90%;
+			margin: 0 auto;
+			color: rgb(111, 110, 110);
+		}
+	}
 }
 
 .price {
@@ -326,6 +380,18 @@ header {
 			&-describe {
 				margin: 1em 2em;
 				font-size: 1.3em;
+			}
+
+			&-first {
+				margin: 1em 2em;
+				font-size: 1.4em;
+			}
+
+			&-info {
+				padding-top: 3em;
+				margin: 1em 2em;
+				font-size: 1.3em;
+				text-align: center;
 			}
 
 			.bold-text {
