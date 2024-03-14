@@ -58,7 +58,7 @@ header .hero-image__text {
   z-index: 5;
   padding: 10px;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 header .hero-image__text .main-p {
   font-size: 2rem;
@@ -85,6 +85,7 @@ header .hero-image .kirp {
 .navbar {
   margin: 0 auto;
   --bs-navbar-padding-y: 0;
+  color: rgb(33, 32, 38);
   width: 100%;
   position: absolute;
   top: 150px;
@@ -117,10 +118,10 @@ header .hero-image .kirp {
   padding-right: 0.5em;
 }
 .navbar .navbar-nav .nav-link:hover {
-  color: rgb(90, 90, 90);
+  color: rgb(129, 129, 129);
 }
 .navbar .navbar-nav .active {
-  color: rgb(40, 40, 40);
+  color: rgb(129, 129, 129);
 }
 .navbar .navcont {
   display: flex;
@@ -134,9 +135,6 @@ header .hero-image .kirp {
 }
 .navbar .navcont .nav-link i {
   padding-right: 0.5em;
-}
-.navbar .navcont .nav-link2:hover {
-  color: rgb(90, 90, 90);
 }
 .navbar .navbar-toggler {
   border: none;
@@ -155,6 +153,7 @@ header .hero-image .kirp {
   width: 85%;
 }
 .law__text-title {
+  color: rgb(33, 32, 38);
   text-transform: uppercase;
   font-size: 3.2rem;
   font-weight: bold;
@@ -162,6 +161,7 @@ header .hero-image .kirp {
   padding-bottom: 0.5em;
 }
 .law__text-describe {
+  color: rgb(33, 32, 38);
   margin-top: 2em;
   font-size: 1.4rem;
 }
@@ -176,10 +176,12 @@ header .hero-image .kirp {
   z-index: 0;
 }
 .offer__text {
+  color: rgb(33, 32, 38);
   padding: 7em 0;
   text-align: center;
 }
 .offer__text-title {
+  color: rgb(33, 32, 38);
   text-transform: uppercase;
   font-size: 3.2rem;
   font-weight: bold;
@@ -220,6 +222,7 @@ header .hero-image .kirp {
   text-align: center;
   font-size: 1.8rem;
   text-transform: uppercase;
+  color: rgb(33, 32, 38);
 }
 .offer__box-item h3 span {
   font-weight: bold;
@@ -258,6 +261,7 @@ header .hero-image .kirp {
   text-align: center;
 }
 .team__text-title {
+  color: rgb(33, 32, 38);
   text-transform: uppercase;
   font-size: 3.2rem;
   font-weight: bold;
@@ -287,17 +291,20 @@ header .hero-image .kirp {
   width: 100%;
 }
 .team__box-text h3 {
+  color: rgb(33, 32, 38);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.8rem;
   margin-bottom: 0.5em;
 }
 .team__box-text h4 {
+  color: rgb(33, 32, 38);
   font-size: 1.4em;
   margin-bottom: 2em;
   font-style: italic;
 }
 .team__box-text p {
+  color: rgb(33, 32, 38);
   font-size: 1.3em;
 }
 .team__box-item {
@@ -331,6 +338,9 @@ header .hero-image .kirp {
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
+}
+.price__text {
+  color: rgb(33, 32, 38);
 }
 .price__text-title {
   text-align: center;
@@ -375,6 +385,7 @@ header .hero-image .kirp {
 .contact {
   margin: 0 auto;
   padding: 7em 0;
+  color: rgb(33, 32, 38);
 }
 .contact__title {
   text-align: center;
@@ -383,6 +394,14 @@ header .hero-image .kirp {
   font-weight: bold;
   letter-spacing: 3px;
   margin-bottom: 2em;
+}
+.contact__contactUs {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4.2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-top: 3em;
 }
 .contact__box {
   display: flex;
@@ -418,6 +437,50 @@ header .hero-image .kirp {
 .contact__box .contact-two p i {
   margin-right: 1em;
 }
+.contact .contact__form {
+  color: rgb(33, 32, 38);
+  margin: 0 auto;
+  margin-top: 6.4em;
+  padding-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.contact .contact__form-box {
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contact .contact__form-box input {
+  padding: 0.5em;
+  font-size: 1.8rem;
+  width: 60%;
+  border: none;
+  box-shadow: 0 0 5px rgb(176, 176, 176);
+}
+.contact .contact__form-box textarea {
+  padding: 0.5em;
+  font-size: 1.8rem;
+  width: 60%;
+  border: none;
+  box-shadow: 0 0 5px rgb(176, 176, 176);
+}
+.contact .contact__form-btn {
+  margin: 1em;
+  padding: 0.5em 4em;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  transition: background-color 0.3s;
+}
+.contact .contact__form-btn:hover {
+  background-color: rgb(226, 225, 225);
+}
 
 .map iframe {
   width: 100%;
@@ -439,21 +502,12 @@ footer p {
     height: 1100px;
     top: 0;
   }
-  header .hero-image__text {
-    padding: 10px;
-    letter-spacing: 3px;
-  }
-  header .hero-image__text .main-p {
-    font-size: 2rem;
-  }
   header .hero-image__text .under-p {
-    padding: 1em;
     font-size: 3.8rem;
   }
   header .hero-image .kirp {
     margin-top: 5em;
     left: 7em;
-    width: 70px;
   }
   .navbar {
     width: 90%;
@@ -638,7 +692,6 @@ footer p {
     top: 0;
   }
   header .hero-image__text {
-    padding: 10px;
     letter-spacing: 5px;
   }
   header .hero-image__text .main-p {

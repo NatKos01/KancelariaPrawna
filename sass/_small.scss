@@ -13,22 +13,13 @@
 			height: 1100px;
 			top: 0;
 			&__text {
-				padding: 10px;
-				letter-spacing: 3px;
-
-				.main-p {
-					font-size: 2rem;
-				}
-
 				.under-p {
-					padding: 1em;
 					font-size: 3.8rem;
 				}
 			}
 			.kirp {
 				margin-top: 5em;
 				left: 7em;
-				width: 70px;
 			}
 		}
 	}
@@ -166,6 +157,7 @@
 
 			&-box {
 				margin: 0 auto;
+				
 				&-describe {
 					margin: 1em 3em;
 					font-size: 1.6rem;
