@@ -114,9 +114,6 @@ header {
 		.nav-link:hover {
 			color: colors.$active-color;
 		}
-		.active {
-			color: colors.$active-color;
-		}
 	}
 
 	.navcont {
@@ -230,7 +227,7 @@ header {
 				}
 
 				.fa-solid {
-					margin-right: 1em;
+					margin-right: 0.4em;
 					transition: transform 0.3s ease;
 					&.rotate {
 						transform: rotate(90deg);
@@ -254,11 +251,75 @@ header {
 						margin: 0.5em 0;
 					}
 				}
+
+				&-section {
+					margin-top: 2em;
+
+					&-item {
+						padding: 1em;
+
+						.toggle-btn {
+							background-color: transparent;
+							border: none;
+							width: 100%;
+							padding: 0.5em;
+							transition: background 0.3s;
+							background-color: rgb(250, 250, 250);
+							&:hover {
+								background-color: rgb(208, 208, 208);
+							}
+						}
+						h4 {
+							font-size: 1.3rem;
+							margin: 0.5em;
+							font-weight: bold;
+							text-transform: uppercase;
+
+							.fa-solid {
+								margin-right: 0.4em;
+								transition: transform 0.3s ease;
+								&.rotate {
+									transform: rotate(90deg);
+								}
+							}
+						}
+						p {
+							font-size: 1.2rem;
+							text-align: left;
+							padding: 0.5em;
+							margin: 0.5em 0;
+
+							span {
+								font-weight: bold;
+								margin-right: 0.3em;
+								text-transform: uppercase;
+							}
+						}
+
+						.textFirst {
+							padding-bottom: 0.5em;
+							text-align: center;
+							font-size: 1.2rem;
+						}
+
+						.section-box {
+							overflow: hidden;
+							max-height: 0;
+							transition: max-height 0.3s ease;
+						}
+
+						&.open {
+							.section-box {
+								max-height: 2000px;
+							}
+						}
+					}
+				}
 			}
 
 			&.open {
 				.offer-list {
-					max-height: 1000px;
+					max-height: 2000px;
 				}
 			}
 		}
@@ -424,15 +485,6 @@ header {
 		margin-bottom: 2em;
 	}
 
-	&__contactUs {
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 4.2rem;
-		font-weight: bold;
-		letter-spacing: 3px;
-		margin-top: 3em;
-	}
-
 	&__box {
 		display: flex;
 		align-items: center;
@@ -440,8 +492,7 @@ header {
 		flex-direction: column;
 		background-color: rgb(249, 249, 249);
 		&-item {
-			padding: 2em;
-			margin: 2em;
+			padding: 1em;
 
 			h3 {
 				font-size: 3.2rem;
@@ -458,7 +509,7 @@ header {
 
 		.contact-one {
 			text-align: center;
-
+			padding-top: 2em;
 			p {
 				text-transform: uppercase;
 			}
@@ -475,11 +526,20 @@ header {
 		}
 	}
 
+	&__contactUs {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 3.2rem;
+		font-weight: bold;
+		letter-spacing: 3px;
+		margin-top: 2em;
+	}
+
 	.contact__form {
 		color: colors.$font-color;
 		margin: 0 auto;
 		margin-top: 6.4em;
-		padding-top: 2em;
+
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -495,16 +555,16 @@ header {
 
 			input {
 				padding: 0.5em;
-				font-size: 1.8rem;
-				width: 60%;
+				font-size: 1.4em;
+				width: 90%;
 				border: none;
 				box-shadow: 0 0 5px rgb(176, 176, 176);
 			}
 
 			textarea {
 				padding: 0.5em;
-				font-size: 1.8rem;
-				width: 60%;
+				font-size: 1.4em;
+				width: 90%;
 				border: none;
 				box-shadow: 0 0 5px rgb(176, 176, 176);
 			}
@@ -513,7 +573,7 @@ header {
 		&-btn {
 			margin: 1em;
 			padding: 0.5em 4em;
-			font-size: 1.8rem;
+			font-size: 1.4rem;
 			border: none;
 			border-radius: 10px;
 			background-color: rgb(240, 240, 240);

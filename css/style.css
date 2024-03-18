@@ -120,9 +120,6 @@ header .hero-image .kirp {
 .navbar .navbar-nav .nav-link:hover {
   color: rgb(129, 129, 129);
 }
-.navbar .navbar-nav .active {
-  color: rgb(129, 129, 129);
-}
 .navbar .navcont {
   display: flex;
   flex-direction: row;
@@ -228,7 +225,7 @@ header .hero-image .kirp {
   font-weight: bold;
 }
 .offer__box-item h3 .fa-solid {
-  margin-right: 1em;
+  margin-right: 0.4em;
   transition: transform 0.3s ease;
 }
 .offer__box-item h3 .fa-solid.rotate {
@@ -249,8 +246,62 @@ header .hero-image .kirp {
   padding: 0.5em;
   margin: 0.5em 0;
 }
+.offer__box-item .offer-list-section {
+  margin-top: 2em;
+}
+.offer__box-item .offer-list-section-item {
+  padding: 1em;
+}
+.offer__box-item .offer-list-section-item .toggle-btn {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0.5em;
+  transition: background 0.3s;
+  background-color: rgb(250, 250, 250);
+}
+.offer__box-item .offer-list-section-item .toggle-btn:hover {
+  background-color: rgb(208, 208, 208);
+}
+.offer__box-item .offer-list-section-item h4 {
+  font-size: 1.3rem;
+  margin: 0.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.offer__box-item .offer-list-section-item h4 .fa-solid {
+  margin-right: 0.4em;
+  transition: transform 0.3s ease;
+}
+.offer__box-item .offer-list-section-item h4 .fa-solid.rotate {
+  transform: rotate(90deg);
+}
+.offer__box-item .offer-list-section-item p {
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+.offer__box-item .offer-list-section-item p span {
+  font-weight: bold;
+  margin-right: 0.3em;
+  text-transform: uppercase;
+}
+.offer__box-item .offer-list-section-item .textFirst {
+  padding-bottom: 0.5em;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.offer__box-item .offer-list-section-item .section-box {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+.offer__box-item .offer-list-section-item.open .section-box {
+  max-height: 2000px;
+}
 .offer__box-item.open .offer-list {
-  max-height: 1000px;
+  max-height: 2000px;
 }
 
 .team {
@@ -395,14 +446,6 @@ header .hero-image .kirp {
   letter-spacing: 3px;
   margin-bottom: 2em;
 }
-.contact__contactUs {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 4.2rem;
-  font-weight: bold;
-  letter-spacing: 3px;
-  margin-top: 3em;
-}
 .contact__box {
   display: flex;
   align-items: center;
@@ -411,8 +454,7 @@ header .hero-image .kirp {
   background-color: rgb(249, 249, 249);
 }
 .contact__box-item {
-  padding: 2em;
-  margin: 2em;
+  padding: 1em;
 }
 .contact__box-item h3 {
   font-size: 3.2rem;
@@ -426,6 +468,7 @@ header .hero-image .kirp {
 }
 .contact__box .contact-one {
   text-align: center;
+  padding-top: 2em;
 }
 .contact__box .contact-one p {
   text-transform: uppercase;
@@ -437,11 +480,18 @@ header .hero-image .kirp {
 .contact__box .contact-two p i {
   margin-right: 1em;
 }
+.contact__contactUs {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-top: 2em;
+}
 .contact .contact__form {
   color: rgb(33, 32, 38);
   margin: 0 auto;
   margin-top: 6.4em;
-  padding-top: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -457,22 +507,22 @@ header .hero-image .kirp {
 }
 .contact .contact__form-box input {
   padding: 0.5em;
-  font-size: 1.8rem;
-  width: 60%;
+  font-size: 1.4em;
+  width: 90%;
   border: none;
   box-shadow: 0 0 5px rgb(176, 176, 176);
 }
 .contact .contact__form-box textarea {
   padding: 0.5em;
-  font-size: 1.8rem;
-  width: 60%;
+  font-size: 1.4em;
+  width: 90%;
   border: none;
   box-shadow: 0 0 5px rgb(176, 176, 176);
 }
 .contact .contact__form-btn {
   margin: 1em;
   padding: 0.5em 4em;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   border: none;
   border-radius: 10px;
   background-color: rgb(240, 240, 240);
@@ -560,8 +610,33 @@ footer p {
   .offer__box-item h3 {
     font-size: 2rem;
   }
+  .offer__box-item h3 .fa-solid {
+    margin-right: 0.7em;
+  }
   .offer__box-item .offer-list ol {
     font-size: 1.4rem;
+  }
+  .offer__box-item .offer-list-section {
+    margin-top: 3em;
+  }
+  .offer__box-item .offer-list-section-item {
+    padding: 1em;
+  }
+  .offer__box-item .offer-list-section-item h4 {
+    font-size: 1.4rem;
+    margin: 0.5em;
+  }
+  .offer__box-item .offer-list-section-item h4 .fa-solid {
+    margin-right: 0.7em;
+  }
+  .offer__box-item .offer-list-section-item p {
+    font-size: 1.3rem;
+    padding: 0.5em;
+    margin: 0.5em 0;
+  }
+  .offer__box-item .offer-list-section-item .textFirst {
+    padding-bottom: 0.5em;
+    font-size: 1.3rem;
   }
   .team {
     padding: 8em 0;
@@ -662,6 +737,36 @@ footer p {
     width: 1px;
     background-color: black;
   }
+  .contact__contactUs {
+    font-size: 3.6rem;
+    letter-spacing: 3px;
+    margin-top: 2.2em;
+  }
+  .contact .contact__form {
+    margin: 0 auto;
+    margin-top: 5em;
+    padding-top: 2em;
+    width: 100%;
+  }
+  .contact .contact__form-box {
+    margin: 1em;
+    width: 100%;
+  }
+  .contact .contact__form-box input {
+    padding: 0.5em;
+    font-size: 1.6rem;
+    width: 80%;
+  }
+  .contact .contact__form-box textarea {
+    padding: 0.5em;
+    font-size: 1.6rem;
+    width: 80%;
+  }
+  .contact .contact__form-btn {
+    margin: 1em;
+    padding: 0.5em 4em;
+    font-size: 1.6rem;
+  }
 }
 @media (min-width: 1001px) {
   header .hero-image .kirp {
@@ -759,8 +864,33 @@ footer p {
   .offer__box-item h3 {
     font-size: 2.4rem;
   }
+  .offer__box-item h3 .fa-solid {
+    margin-right: 1em;
+  }
   .offer__box-item .offer-list ol {
     font-size: 1.8rem;
+  }
+  .offer__box-item .offer-list-section {
+    margin-top: 3em;
+  }
+  .offer__box-item .offer-list-section-item {
+    padding: 1em;
+  }
+  .offer__box-item .offer-list-section-item h4 {
+    font-size: 1.8rem;
+    margin: 0.5em;
+  }
+  .offer__box-item .offer-list-section-item h4 .fa-solid {
+    margin-right: 1em;
+  }
+  .offer__box-item .offer-list-section-item p {
+    font-size: 1.7rem;
+    padding: 0.5em;
+    margin: 0.5em 0;
+  }
+  .offer__box-item .offer-list-section-item .textFirst {
+    padding-bottom: 0.5em;
+    font-size: 1.7rem;
   }
   .team {
     padding: 10em 0;
@@ -857,6 +987,36 @@ footer p {
   }
   .contact__box .contact-two p i {
     margin-right: 1em;
+  }
+  .contact__contactUs {
+    font-size: 4.2rem;
+    letter-spacing: 3px;
+    margin-top: 3em;
+  }
+  .contact .contact__form {
+    margin: 0 auto;
+    margin-top: 6.4em;
+    padding-top: 2em;
+    width: 100%;
+  }
+  .contact .contact__form-box {
+    margin: 1em;
+    width: 100%;
+  }
+  .contact .contact__form-box input {
+    padding: 0.5em;
+    font-size: 1.8rem;
+    width: 70%;
+  }
+  .contact .contact__form-box textarea {
+    padding: 0.5em;
+    font-size: 1.8rem;
+    width: 70%;
+  }
+  .contact .contact__form-btn {
+    margin: 1em;
+    padding: 0.5em 4em;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 1173px) {

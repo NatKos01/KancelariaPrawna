@@ -84,11 +84,43 @@
 
 				h3 {
 					font-size: 2rem;
+
+					.fa-solid {
+						margin-right: 0.7em;
+					}
 				}
 
 				.offer-list {
 					ol {
 						font-size: 1.4rem;
+					}
+
+					&-section {
+						margin-top: 3em;
+	
+						&-item {
+							padding: 1em;
+	
+							h4 {
+								font-size: 1.4rem;
+								margin: 0.5em;
+
+								.fa-solid {
+									margin-right: 0.7em;
+								}
+							}
+							p {
+								font-size: 1.3rem;
+								padding: 0.5em;
+								margin: 0.5em 0;
+								
+							}
+	
+							.textFirst {
+								padding-bottom: 0.5em;
+								font-size: 1.3rem;
+							}
+						}
 					}
 				}
 			}
@@ -221,6 +253,43 @@
 			height: 300px;
 			width: 1px;
 			background-color: black;
+		}
+
+		&__contactUs {
+			font-size: 3.6rem;
+			letter-spacing: 3px;
+			margin-top: 2.2em;
+		}
+
+		.contact__form {
+			margin: 0 auto;
+			margin-top: 5em;
+			padding-top: 2em;
+			width: 100%;
+	
+			&-box {
+				margin: 1em;
+				width: 100%;
+	
+				input {
+					padding: 0.5em;
+					font-size: 1.6rem;
+					width: 80%;
+				}
+	
+				textarea {
+					padding: 0.5em;
+					font-size: 1.6rem;
+					width: 80%;
+				}
+			}
+	
+			&-btn {
+				margin: 1em;
+				padding: 0.5em 4em;
+				font-size: 1.6rem;
+				
+			}
 		}
 	}
 }
