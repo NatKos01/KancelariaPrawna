@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Radca Prawny - Bogumił Olczak</title>
   <meta name="description" content="Bogumił Olczak Radca Prawny Kancelaria Tutor Łowicz">
-  <meta name="keywords" content="Bogumił Olczak, Olczak, Radca Prawny, Prawo, Kancelaria, Kancelaria prawna, Tutor, Kancelaria Tutor, Polska, Malta, Doradztwo, Prawo, Monika Olczak, usługi prawne, Łowicz, Bajana Jerzego, Prawnik, wsparcie prawne, spółki">
+  <meta name="keywords"
+    content="Bogumił Olczak, Olczak, Radca Prawny, Prawo, Kancelaria, Kancelaria prawna, Tutor, Kancelaria Tutor, Polska, Malta, Doradztwo, Prawo, Monika Olczak, usługi prawne, Łowicz, Bajana Jerzego, Prawnik, wsparcie prawne, spółki">
   <link rel="icon" href="img/logo.jpg">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -346,28 +347,31 @@
     <h3 class="contact__contactUs line-text">
       Napisz do nas
     </h3>
-    <form action="/send-email" method="post" class="contact__form">
+    <form action="mail.php" method="post" class="contact__form">
 
       <div class="contact__form-box">
-        <input type="text" id="name" placeholder="Imię i Nazwisko/Firma">
+        <input type="text" id="name" placeholder="Imię i Nazwisko/Firma" required>
       </div>
 
       <div class="contact__form-box">
-        <input type="email" id="email" placeholder="E-mail">
+        <input type="email" id="email" placeholder="E-mail" required>
       </div>
 
       <div class="contact__form-box">
-        <input type="tel" id="tel" placeholder="Telefon">
+        <input type="tel" id="tel" placeholder="Telefon" required>
       </div>
 
       <div class="contact__form-box">
-        <textarea id="msg" cols="50" rows="10" placeholder="Wiadomość"></textarea>
+        <textarea name="msg" id="msg" cols="50" rows="10" placeholder="Wiadomość" required></textarea>
       </div>
 
       <button type="submit" class="contact__form-btn">Wyślij</button>
+
+      <p class="msg-status"></p>
     </form>
 
   </section>
+
 
   <section class="map">
     <iframe
@@ -384,17 +388,17 @@
     crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
   <!-- <script src="js/server.js"></script> -->
- <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/65f8848a1ec1082f04d8b34a/1hp9cbf5b';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/65f8848a1ec1082f04d8b34a/1hp9cbf5b';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
   </script>
   <!--End of Tawk.to Script-->
 </body>

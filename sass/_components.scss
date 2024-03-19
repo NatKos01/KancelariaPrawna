@@ -18,3 +18,26 @@
 	background-color: black;
 	transform: skew(120deg);
 }
+
+.msg-status {
+	position: absolute;
+	top: 50%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	padding: 0.3em;
+	width: 500px;
+	border-radius: 10px;
+	font-size: 2.4rem;
+}
+
+.succes {
+	display: flex;
+	background-color: #add39171;
+}
+
+.error {
+	display: flex;
+	background-color: #d3979171;
+}
+
