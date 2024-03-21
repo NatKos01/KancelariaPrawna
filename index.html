@@ -339,8 +339,8 @@
       <div class="contact__box-item contact-two">
         <p><i class="fa-solid fa-phone"></i> +48 600 202 458</p>
         <p><i class="fa-solid fa-envelope"></i> example@example.com</p>
-        <p><i class="fa-solid fa-location-dot"></i> Bajana Jerzego 9B, 99-400 Łowicz</p>
-        <p><i class="fa-solid fa-user-tie"></i> NIP: </p>
+        <p><i class="fa-solid fa-location-dot"></i> Bolimowska 14/18 B lokal 09, 99-400 Łowicz</p>
+        <p><i class="fa-solid fa-user-tie"></i> NIP: 8341049738</p>
       </div>
 
     </div>
@@ -348,7 +348,7 @@
     <h3 class="contact__contactUs line-text" id="sendMsg">
       Napisz do nas
     </h3>
-    <form action="mail.php" method="post" class="contact__form">
+    <form action="mail.php" method="post" class="contact__form" id="contactForm">
 
       <div class="contact__form-box">
         <input type="text" id="name" name="name" placeholder="Imię i Nazwisko/Firma" required>
@@ -376,7 +376,7 @@
 
   <section class="map">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9803.263509091765!2d19.93307066653791!3d52.101282432083806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471be6651aa2a6db%3A0xf3e82e6da33c0277!2sKancelaria%20radcy%20prawnego%20TUTOR%20Bogumi%C5%82%20Olczak!5e0!3m2!1spl!2spl!4v1709157400540!5m2!1spl!2spl"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d612.6508807756702!2d19.95983244089645!3d52.105146885304585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471be66fbac9f359%3A0x668ef9f22d489912!2sBolimowska%2014%2F18%20B%20lokal%2009%2C%2099-400%20%C5%81owicz!5e0!3m2!1spl!2spl!4v1711043934523!5m2!1spl!2spl"
       height="400" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
@@ -387,6 +387,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/formhandler.js"></script>
   <script src="js/main.js"></script>
 
   <!--Start of Tawk.to Script-->

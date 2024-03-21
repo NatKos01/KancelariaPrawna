@@ -10,7 +10,7 @@ if (!$from) {
 $number = isset($_POST["tel"]) ? htmlspecialchars($_POST["tel"]) : "";
 $message = isset($_POST["msg"]) ? htmlspecialchars($_POST["msg"]) : "";
 
-$expected_host = "http://testnat.hmcloud.pl/";
+$expected_host = "testnat.hmcloud.pl";
 $parsed_url = parse_url($_SERVER['HTTP_REFERER']);
 if ($parsed_url['host'] != $expected_host) {
     exit("Nieprawidłowe pochodzenie formularza");
@@ -26,11 +26,5 @@ $headers = "From: " . $from . "\r\n";
 $headers .= "Reply-To: " . $from . "\r\n";
 
 $mail_status = mail($to, $subject, $txt, $headers);
-if ($mail_status) {
-
-    header("Location: /index.html?mail_status=sent");
-} else {
-    header("Location: /index.html?mail_status=error");
-}
 
 ?> 
