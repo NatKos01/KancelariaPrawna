@@ -149,11 +149,18 @@ header .hero-image .kirp {
 .navbar .navcont .nav-link {
   color: rgb(33, 32, 38);
   font-size: 1.5rem;
-  padding: 0.5em 1.2em;
+  padding: 0.5em 1em;
   margin: 0;
 }
 .navbar .navcont .nav-link i {
-  padding-right: 0.5em;
+  margin-right: 0.5em;
+}
+.navbar .navcont .nav-link .fa-envelope {
+  font-size: 2.5rem;
+  transition: color 0.3s;
+}
+.navbar .navcont .nav-link .fa-envelope:hover {
+  color: rgb(129, 129, 129);
 }
 .navbar .navbar-toggler {
   border: none;
@@ -290,6 +297,7 @@ header .hero-image .kirp {
   margin: 0.5em;
   font-weight: bold;
   text-transform: uppercase;
+  color: rgb(33, 32, 38);
 }
 .offer__box-item .offer-list-section-item h4 .fa-solid {
   margin-right: 0.4em;
@@ -550,6 +558,7 @@ header .hero-image .kirp {
   border-radius: 10px;
   background-color: rgb(240, 240, 240);
   transition: background-color 0.3s;
+  color: rgb(33, 32, 38);
 }
 .contact .contact__form-btn:hover {
   background-color: rgb(226, 225, 225);

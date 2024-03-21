@@ -122,10 +122,18 @@ header {
 		.nav-link {
 			color: colors.$font-color;
 			font-size: 1.5rem;
-			padding: 0.5em 1.2em;
+			padding: 0.5em 1em;
 			margin: 0;
 			i {
-				padding-right: 0.5em;
+				margin-right: 0.5em;
+			}
+
+			.fa-envelope {
+				font-size: 2.5rem;
+				transition: color 0.3s;
+				&:hover {
+					color: colors.$active-color;
+				}
 			}
 		}
 	}
@@ -274,6 +282,7 @@ header {
 							margin: 0.5em;
 							font-weight: bold;
 							text-transform: uppercase;
+							color: colors.$font-color;
 
 							.fa-solid {
 								margin-right: 0.4em;
@@ -579,7 +588,7 @@ header {
 			border-radius: 10px;
 			background-color: rgb(240, 240, 240);
 			transition: background-color 0.3s;
-
+            color: colors.$font-color;
 			&:hover {
 				background-color: rgb(226, 225, 225);
 			}
